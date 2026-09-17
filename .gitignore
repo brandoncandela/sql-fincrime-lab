@@ -1,0 +1,5 @@
+.DS_Store
+.sites-runtime/
+__pycache__/
+*.pyc
+.env*
