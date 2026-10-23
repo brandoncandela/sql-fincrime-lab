@@ -1,8 +1,10 @@
 # SQL Financial Crime Lab
 
-**Brandon Candela · SQL, AML transaction monitoring, rule tuning and QC**
+![SQL Financial Crime Lab](docs/social-preview.jpg)
 
-[Try the public demo](https://brandon-sql-fincrime-lab.brandon-d-candela.chatgpt.site/) · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/)
+**[▶ Open the live demo](https://brandoncandela.github.io/sql-fincrime-lab/)** · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/) · Built by Brandon Candela, CAMS
+
+> **What this shows:** Real SQLite queries (joins, CTEs, window functions) driving AML rule tuning, with measured precision, recall and missed cases.
 
 A fictional fintech has too many alerts. Which monitoring changes reduce review work, and which remove cases that still deserve investigation? This browser-based lab makes that tradeoff visible using real SQLite queries and clearly labeled synthetic fixtures.
 
