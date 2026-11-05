@@ -44,8 +44,10 @@ python3 -m http.server 5190 --directory dist
 
 Open http://localhost:5190. Python's standard library is sufficient to regenerate data and run SQL tests. Node is needed only for the optional JavaScript syntax check. Static assets are tracked; there is no package installation or backend service.
 
-## Scope and limitations
+## Limits
 
-Independent educational work sample created with AI-assisted development. Not employer-endorsed, not a production compliance system and not an implementation of proprietary NICE Actimize SAM/CDD/WLF/IFM software. Demonstrated concepts do not imply Actimize configuration experience. No real bank/customer data is included. QC is an explicitly local role-play, not authenticated separation of duties or an immutable audit log. Never enter confidential data into the public demo. No claim of measured production efficiency or real-world detection performance.
+The customers, transactions and labels are made up, and the detection results describe this small test set only. The rules show common monitoring ideas; they are not a copy of any vendor's product, such as NICE Actimize. QC is a role-play in your browser, without real user accounts or a locked audit log, so don't enter confidential data.
+
+Built with AI coding tools.
 
 Code is MIT licensed; vendored SQL.js retains its included license. SQLite data and labels are fictional.

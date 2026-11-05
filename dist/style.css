@@ -8,3 +8,17 @@ main{max-width:1500px;margin:auto;padding:34px 4vw 46px}.intro{display:grid;grid
 @media(max-width:700px){header,footer{align-items:flex-start;flex-direction:column}.intro,.rules{grid-template-columns:1fr;gap:14px}.intro{margin-bottom:20px;padding:22px 18px}.guide{padding:17px 0 0;border-left:0;border-top:1px solid #405a6e}.rules p{min-height:0}.metrics{grid-template-columns:1fr 1fr}.section-head{align-items:flex-start;flex-wrap:wrap}.case-panel,.resources{padding:18px}main{padding:22px 4vw}.pill{margin-left:0}h1{font-size:36px;letter-spacing:-1.2px}.table-wrap table{min-width:560px}}
 /* Impeccable refinement: evidence-led analyst tooling. */
 ::selection{background:#5bd4bd;color:#08131f}*{scrollbar-color:#48647a #0b1927}h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}.intro{background:transparent;border-inline:0;padding-inline:0}.intro h1{max-width:17ch;letter-spacing:-.03em}button{min-height:44px}.rules article,.case-panel,.resources{border-color:#365167}.rules article{background:#0e2030}.metric{min-height:104px}summary{display:flex;min-height:44px;align-items:center}.links a{display:inline-flex;min-height:44px;align-items:center}.mark{display:none}@media(prefers-reduced-motion:reduce){a,button,input,textarea,select{transition:none!important}}
+
+/* Motion (classes are added by motion.js, so the page is fully visible without JavaScript) */
+.mo { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.mo.mo-in { opacity: 1; transform: none; }
+.mo-stagger > * { animation: mo-rise .45s ease both; animation-delay: calc(var(--i, 0) * 70ms); }
+@keyframes mo-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+button { transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s, transform .12s; }
+button:active:not(:disabled) { transform: translateY(1px); }
+tbody tr { transition: background-color .2s; }
+@media (prefers-reduced-motion: reduce) {
+  .mo { opacity: 1; transform: none; transition: none; }
+  .mo-stagger > * { animation: none; }
+  button, tbody tr { transition: none; }
+}
