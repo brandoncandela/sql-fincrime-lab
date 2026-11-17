@@ -1,0 +1,64 @@
+/* White and blue portfolio look for this lab, with a sky blue accent. Loaded after style.css and apple.css. */
+:root {
+  color: #1d1d1f; background: #fbfcff; color-scheme: light;
+  --muted: #55555d; --line: rgb(29 29 31 / .09); --accent: #0284c7; --surface: rgb(255 255 255 / .74);
+  --surface-2: #f2f7fc; --paper: #fbfcff; --ink: #1d1d1f;
+  --glass-shadow: 0 1px 0 rgb(255 255 255 / .8) inset, 0 12px 32px rgb(30 58 138 / .07);
+}
+html, body { background: #fbfcff; }
+body { font-family: "Inter", system-ui, sans-serif; }
+::selection { background: rgb(2 132 199 / .18); color: inherit; }
+* { scrollbar-color: auto; }
+h1, h2, h3 { color: #1d1d1f; }
+ol { color: #55555d; }
+a { color: var(--accent); }
+
+header { background: rgb(251 252 255 / .72); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%); position: sticky; top: 0; z-index: 20; color: #55555d; }
+.brand { color: #1d1d1f; }
+.pill { border: 0; border-radius: 999px; background: rgb(2 132 199 / .1); color: #075985; }
+
+.intro { grid-template-columns: minmax(0, 1.4fr) minmax(300px, 1fr); align-items: center; }
+.intro h1 { font-weight: 800; }
+.intro h1 span { color: inherit; }
+.guide { border-left: 0; padding-left: 0; }
+.guide strong { color: #1d1d1f; }
+.guide .ap-art { margin-bottom: 18px; }
+.eyebrow, .tag { color: var(--accent); }
+.case-ref { color: #86868b; }
+#notice { background: var(--surface); border: 1px solid rgb(255 255 255 / .7); border-radius: 14px; color: #55555d; box-shadow: var(--glass-shadow); }
+
+.rules article, .case-panel, .resources, .metrics {
+  background: var(--surface); border: 1px solid rgb(255 255 255 / .7); border-radius: 18px;
+  box-shadow: var(--glass-shadow); backdrop-filter: blur(18px) saturate(150%); -webkit-backdrop-filter: blur(18px) saturate(150%);
+}
+.rules output { color: var(--accent); }
+.metrics { overflow: hidden; background: var(--line); }
+.metric { background: rgb(255 255 255 / .9); }
+.metric strong { letter-spacing: -.03em; color: #1d1d1f; }
+.metric em { color: #86868b; }
+summary { color: #1d1d1f; }
+
+button, select { border: 0; border-radius: 999px; background: rgb(29 29 31 / .06); color: #1d1d1f; font-weight: 600; padding: 9px 16px; }
+button:hover { background: rgb(29 29 31 / .1); border: 0; }
+button.primary { background: #1d1d1f; color: #fff; }
+button.primary:hover { background: #000; }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible { outline: 3px solid rgb(2 132 199 / .4); }
+td button { border-radius: 10px; background: rgb(2 132 199 / .08); color: #075985; }
+
+table { border: 0; }
+th { background: rgb(251 252 255 / .95); color: #86868b; font-weight: 500; }
+tr.selected { background: rgb(2 132 199 / .09); }
+tbody tr:hover { background: rgb(2 132 199 / .05); }
+.case-panel label { color: #1d1d1f; }
+.case-panel input, .case-panel textarea, .case-panel select { background: #fff; color: #1d1d1f; border: 1px solid rgb(29 29 31 / .14); border-radius: 10px; }
+.case-panel .context { background: rgb(2 132 199 / .06); border: 0; border-radius: 12px; }
+.status { color: #b26a00; }
+.missing { color: #b26a00; }
+.links a { border: 0; border-radius: 999px; background: rgb(29 29 31 / .06); color: #1d1d1f; }
+.links a:hover { background: rgb(29 29 31 / .1); }
+pre { background: #f5f8ff; color: #1e3a8a; border-radius: 14px; }
+footer { color: #86868b; }
+
+@media (max-width: 700px) {
+  .guide { border-top: 1px solid var(--line); }
+}
