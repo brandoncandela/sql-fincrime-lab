@@ -44,6 +44,14 @@ python3 -m http.server 5190 --directory dist
 
 Open http://localhost:5190. Python's standard library is sufficient to regenerate data and run SQL tests. Node is needed only for the optional JavaScript syntax check. Static assets are tracked; there is no package installation or backend service.
 
+## Design decisions and validation
+
+- **Scenario scope:** rapid movement, customer-profile deviation and many-to-one flows demonstrate three distinct review decisions. Each customer has one authored scenario here; overlapping typologies are outside this lab's evaluation design.
+- **Thresholds:** the rapid-movement query requires incoming value ≥$5,000 and a 90–110% outbound amount match within the selected time gap. Profile multipliers and minimum distinct senders are explicit query parameters. These are illustrative boundaries, not production calibration.
+- **Tradeoffs:** fewer alerts can mean more missed review-worthy customers. Calendar-day aggregation is inspectable but misses patterns spanning midnight; timing and amount similarity do not prove that the same funds moved onward.
+- **Validation:** Python builds a reproducible SQLite fixture; SQL tests cover edges, duplicate senders, date isolation, integrity and baseline evaluation counts. Browser metrics describe authored customer–scenario pairs, not real-world accuracy. QC roles are simulated local workflows.
+- **AI assistance:** AI coding tools assisted implementation and documentation. Inspectable SQL, fixture construction, tests and the implementation guide substantiate the design. No unverified personal contribution, employer outcome or production deployment is claimed.
+
 ## Limits
 
 The customers, transactions and labels are made up, and the detection results describe this small test set only. The rules show common monitoring ideas; they are not a copy of any vendor's product, such as NICE Actimize. QC is a role-play in your browser, without real user accounts or a locked audit log, so don't enter confidential data.
