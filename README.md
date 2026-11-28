@@ -1,5 +1,7 @@
 # SQL Financial Crime Lab
 
+[![CI](https://github.com/brandoncandela/sql-fincrime-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/brandoncandela/sql-fincrime-lab/actions/workflows/ci.yml)
+
 ![SQL Financial Crime Lab](docs/social-preview.jpg)
 
 **[▶ Open the live demo](https://brandoncandela.github.io/sql-fincrime-lab/)** · [Technical case study](https://brandoncandela.github.io/case-studies/sql-fincrime-lab.html) · [Portfolio](https://brandoncandela.github.io/) · [LinkedIn](https://www.linkedin.com/in/brandon-candela/) · Built by Brandon Candela, CAMS
